@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.ywxiang.BeansException;
 import com.ywxiang.PropertyValue;
 import com.ywxiang.factory.config.BeanDefinition;
+import com.ywxiang.factory.config.BeanReference;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -49,6 +50,10 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             for (PropertyValue propertyValue : beanDefinition.getPropertyValues().getPropertyValueList()) {
                 String name = propertyValue.getName();
                 Object value = propertyValue.getValue();
+                if (value instanceof BeanReference) {
+                    BeanReference beanReference = (BeanReference) value;
+                    value = getBean(beanReference.getBeanName());
+                }
                 BeanUtil.setFieldValue(bean,name, value);
             }
         } catch (Exception e) {
