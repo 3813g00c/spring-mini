@@ -1,4 +1,4 @@
-package com.ywxiang;
+package com.ywxiang.beans;
 
 /**
  * @author xiangyaowei

@@ -1,7 +1,7 @@
-package com.ywxiang.support;
+package com.ywxiang.beans.support;
 
-import com.ywxiang.BeansException;
-import com.ywxiang.factory.config.BeanDefinition;
+import com.ywxiang.beans.BeansException;
+import com.ywxiang.beans.factory.config.BeanDefinition;
 
 /**
  * @author xiangyaowei

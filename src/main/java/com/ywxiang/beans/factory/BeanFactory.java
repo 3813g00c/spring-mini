@@ -1,6 +1,6 @@
-package com.ywxiang.factory;
+package com.ywxiang.beans.factory;
 
-import com.ywxiang.BeansException;
+import com.ywxiang.beans.BeansException;
 
 /**
  * @author xiangyaowei

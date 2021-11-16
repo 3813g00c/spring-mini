@@ -1,12 +1,10 @@
-package com.ywxiang.support;
+package com.ywxiang.beans.support;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.ywxiang.BeansException;
-import com.ywxiang.PropertyValue;
-import com.ywxiang.factory.config.BeanDefinition;
-import com.ywxiang.factory.config.BeanReference;
-
-import java.lang.reflect.InvocationTargetException;
+import com.ywxiang.beans.BeansException;
+import com.ywxiang.beans.PropertyValue;
+import com.ywxiang.beans.factory.config.BeanDefinition;
+import com.ywxiang.beans.factory.config.BeanReference;
 
 /**
  * @author xiangyaowei

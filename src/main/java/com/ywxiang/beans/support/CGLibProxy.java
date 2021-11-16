@@ -1,10 +1,9 @@
-package com.ywxiang.support;
+package com.ywxiang.beans.support;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
-import java.lang.invoke.MethodHandleInfo;
 import java.lang.reflect.Method;
 
 /**

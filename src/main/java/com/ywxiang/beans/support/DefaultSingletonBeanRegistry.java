@@ -1,6 +1,6 @@
-package com.ywxiang.support;
+package com.ywxiang.beans.support;
 
-import com.ywxiang.factory.config.SingletonBeanRegistry;
+import com.ywxiang.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.HashMap;
 import java.util.Map;

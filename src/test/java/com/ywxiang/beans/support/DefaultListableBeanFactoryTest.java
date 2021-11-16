@@ -1,15 +1,13 @@
-package com.ywxiang.support;
+package com.ywxiang.beans.support;
 
-import com.ywxiang.PropertyValue;
-import com.ywxiang.PropertyValues;
+import com.ywxiang.beans.PropertyValue;
+import com.ywxiang.beans.PropertyValues;
 import com.ywxiang.bean.Car;
 import com.ywxiang.bean.Persion;
-import com.ywxiang.factory.config.BeanDefinition;
-import com.ywxiang.factory.config.BeanReference;
+import com.ywxiang.beans.factory.config.BeanDefinition;
+import com.ywxiang.beans.factory.config.BeanReference;
 import com.ywxiang.service.HelloService;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @author xiangyaowei

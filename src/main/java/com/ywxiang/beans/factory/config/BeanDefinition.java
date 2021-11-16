@@ -1,6 +1,6 @@
-package com.ywxiang.factory.config;
+package com.ywxiang.beans.factory.config;
 
-import com.ywxiang.PropertyValues;
+import com.ywxiang.beans.PropertyValues;
 
 /**
  *保存Bean的信息，包括class类型，方法构造参数，是否为单例，此处简化为只包含Class类型

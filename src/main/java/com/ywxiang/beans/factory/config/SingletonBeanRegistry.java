@@ -1,4 +1,4 @@
-package com.ywxiang.factory.config;
+package com.ywxiang.beans.factory.config;
 
 /**
  * @author xiangyaowei
