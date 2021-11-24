@@ -8,4 +8,7 @@
     <bean id="car" class="com.ywxiang.bean.Car">
         <property name="name" value="porsche"/>
     </bean>
+
+    <bean class="com.ywxiang.common.CustomBeanFactoryPostProcessor"/>
+    <bean class="com.ywxiang.common.CustomerBeanPostProcessor"/>
 </beans>
