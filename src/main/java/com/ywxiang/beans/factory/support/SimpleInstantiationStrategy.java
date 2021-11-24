@@ -1,4 +1,4 @@
-package com.ywxiang.beans.support;
+package com.ywxiang.beans.factory.support;
 
 import com.ywxiang.beans.BeansException;
 import com.ywxiang.beans.factory.config.BeanDefinition;

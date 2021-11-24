@@ -1,8 +1,9 @@
-package com.ywxiang.beans.support;
+package com.ywxiang.beans.factory.support;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.ywxiang.beans.BeansException;
 import com.ywxiang.beans.PropertyValue;
+import com.ywxiang.beans.factory.config.AutowireCapableBeanFactory;
 import com.ywxiang.beans.factory.config.BeanDefinition;
 import com.ywxiang.beans.factory.config.BeanReference;
 
@@ -10,7 +11,7 @@ import com.ywxiang.beans.factory.config.BeanReference;
  * @author xiangyaowei
  * @date 2021/11/15
  */
-public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
+public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory implements AutowireCapableBeanFactory {
 
     private InstantiationStrategy instantiationStrategy = new SimpleInstantiationStrategy();
 
@@ -52,7 +53,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
                     BeanReference beanReference = (BeanReference) value;
                     value = getBean(beanReference.getBeanName());
                 }
-                BeanUtil.setFieldValue(bean,name, value);
+                BeanUtil.setFieldValue(bean, name, value);
             }
         } catch (Exception e) {
             throw new BeansException("Error setting property values for bean: " + beanName, e);
