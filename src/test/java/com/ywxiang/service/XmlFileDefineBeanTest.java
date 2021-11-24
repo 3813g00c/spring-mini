@@ -1,7 +1,7 @@
 package com.ywxiang.service;
 
 import com.ywxiang.bean.Car;
-import com.ywxiang.bean.Persion;
+import com.ywxiang.bean.Person;
 import com.ywxiang.beans.factory.support.DefaultListableBeanFactory;
 import com.ywxiang.beans.factory.xml.XmlBeanDefinitionReader;
 import org.junit.Test;
@@ -17,8 +17,8 @@ public class XmlFileDefineBeanTest {
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
         reader.loadBeanDefinitions("classpath:spring.xml");
 
-        Persion persion = (Persion) beanFactory.getBean("person");
-        System.out.println(persion);
+        Person person = (Person) beanFactory.getBean("person");
+        System.out.println(person);
 
         Car car = (Car) beanFactory.getBean("car");
         System.out.println(car);

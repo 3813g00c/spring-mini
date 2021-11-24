@@ -5,6 +5,7 @@ import com.ywxiang.beans.BeansException;
 import com.ywxiang.beans.PropertyValue;
 import com.ywxiang.beans.factory.config.AutowireCapableBeanFactory;
 import com.ywxiang.beans.factory.config.BeanDefinition;
+import com.ywxiang.beans.factory.config.BeanPostProcessor;
 import com.ywxiang.beans.factory.config.BeanReference;
 
 /**
@@ -25,6 +26,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         try {
             bean = createBeanInstance(beanDefinition);
             applyPropertyValues(beanName, bean, beanDefinition);
+            initializeBean(beanName, bean, beanDefinition);
         } catch (Exception e) {
             throw new BeansException("Instantiation of bean failed", e);
         }
@@ -59,4 +61,42 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             throw new BeansException("Error setting property values for bean: " + beanName, e);
         }
     }
+
+    protected Object initializeBean(String name, Object bean, BeanDefinition beanDefinition) {
+        Object wrappedBean = applyBeanPostProcessorsBeforeInitialization(bean, name);
+        invokeInitMethods(name, wrappedBean, beanDefinition);
+        wrappedBean = applyBeanPostProcessorsAfterInitialization(bean, name);
+        return wrappedBean;
+    }
+
+    @Override
+    public Object applyBeanPostProcessorsBeforeInitialization(Object existingBean, String beanName) throws BeansException{
+        Object result = existingBean;
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessors()) {
+            Object current = beanPostProcessor.postProcessBeforeInitialization(result, beanName);
+            if (null == current) {
+                return result;
+            }
+            result = current;
+        }
+        return result;
+    }
+
+    @Override
+    public Object applyBeanPostProcessorsAfterInitialization(Object existingBean, String beanName) throws BeansException{
+        Object result = existingBean;
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessors()) {
+            Object current = beanPostProcessor.postProcessAfterInitialization(result, beanName);
+            if (null == current) {
+                return result;
+            }
+            result = current;
+        }
+        return result;
+    }
+
+    protected void invokeInitMethods(String beanName, Object bean, BeanDefinition beanDefinition) {
+        System.out.println("执行bean [" + beanName + "]的初始化方法");
+    }
+
 }

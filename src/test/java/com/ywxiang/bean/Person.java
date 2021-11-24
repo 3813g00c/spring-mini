@@ -4,13 +4,13 @@ package com.ywxiang.bean;
  * @author xiangyaowei
  * @date 2021/11/16
  */
-public class Persion {
+public class Person {
     private String name;
     private Car car;
 
-    public Persion() {}
+    public Person() {}
 
-    public Persion(String name, Car car) {
+    public Person(String name, Car car) {
         this.name = name;
         this.car = car;
     }

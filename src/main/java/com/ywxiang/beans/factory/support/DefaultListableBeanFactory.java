@@ -53,4 +53,9 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
     public boolean containsBeanDefinition(String beanName) {
         return beanDefinitionMap.containsKey(beanName);
     }
+
+    @Override
+    public void preInstantiateSingleton() throws BeansException {
+        beanDefinitionMap.keySet().forEach(this::getBean);
+    }
 }
