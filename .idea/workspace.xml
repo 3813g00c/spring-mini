@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="BeanFactoryPostProcess和BeanPostProcessor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/ApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/ConfigurableApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractRefreshableApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractXmlApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/ApplicationContextTest.java" afterDir="false" />
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="应用上下文ApplicationContext">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/DisposableBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/InitializingBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DisposableBeanAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/InitAndDestoryMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/init-destroy-method.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/ConfigurableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ywxiang/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/bean/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="bean-factory-post-processor-and-bean-post-processor" />
+        <entry key="$PROJECT_DIR$" value="application-context" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +61,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="init-and-destroy-method" />
+                    <option name="lastUsedInstant" value="1637821405" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="application-context" />
                     <option name="lastUsedInstant" value="1637736532" />
                   </RecentBranch>
@@ -69,10 +79,6 @@
                   <RecentBranch>
                     <option name="branchName" value="populate-bean-with-bean" />
                     <option name="lastUsedInstant" value="1637041607" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="populate-bean-with-property-values" />
-                    <option name="lastUsedInstant" value="1637041606" />
                   </RecentBranch>
                 </list>
               </option>
@@ -112,6 +118,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mycode\spring\spring-mini\src\test\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ywxiang.beans" />
     </key>
@@ -120,7 +129,7 @@
       <recent name="com.ywxiang" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationContextTest.test">
+  <component name="RunManager" selected="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -180,17 +189,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefaultListableBeanFactoryTest.populateBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InitAndDestoryMethodTest.testInitAndDestroyMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ywxiang.beans.factory.support.*" />
+          <option name="PATTERN" value="com.ywxiang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ywxiang.support" />
-      <option name="MAIN_CLASS_NAME" value="com.ywxiang.beans.factory.support.DefaultListableBeanFactoryTest" />
-      <option name="METHOD_NAME" value="populateBean" />
+      <option name="PACKAGE_NAME" value="com.ywxiang" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.InitAndDestoryMethodTest" />
+      <option name="METHOD_NAME" value="testInitAndDestroyMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod" />
         <item itemvalue="JUnit.ApplicationContextTest.test" />
         <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanPostProcessor" />
         <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanFactoryPostProcessor" />
         <item itemvalue="JUnit.XmlFileDefineBeanTest.testXml" />
-        <item itemvalue="JUnit.DefaultListableBeanFactoryTest.populateBean" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +256,7 @@
       <workItem from="1637573497765" duration="351000" />
       <workItem from="1637647610221" duration="4200000" />
       <workItem from="1637652564588" duration="2439000" />
-      <workItem from="1637718783536" duration="14479000" />
+      <workItem from="1637718783536" duration="19543000" />
     </task>
     <task id="LOCAL-00001" summary="BeanDefinition和BeanDefinitionRegistry">
       <created>1636967759808</created>
@@ -305,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637736435465</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="应用上下文ApplicationContext">
+      <created>1637742158350</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637742158350</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +347,8 @@
     <MESSAGE value="路径修改" />
     <MESSAGE value="在xml文件中定义bean" />
     <MESSAGE value="BeanFactoryPostProcess和BeanPostProcessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="BeanFactoryPostProcess和BeanPostProcessor" />
+    <MESSAGE value="应用上下文ApplicationContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="应用上下文ApplicationContext" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,21 +357,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/beans/factory/support/DefaultListableBeanFactoryTest.java</url>
           <line>31</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractBeanFactory.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DefaultSingletonBeanRegistry.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/SimpleInstantiationStrategy.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/beans/factory/support/DefaultListableBeanFactoryTest.java</url>
@@ -367,29 +369,14 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/xml/XmlBeanDefinitionReader.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/xml/XmlBeanDefinitionReader.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/bean/Person.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="24" />
+          <line>83</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
