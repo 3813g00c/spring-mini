@@ -3,7 +3,7 @@ package com.ywxiang.beans.factory.support;
 import com.ywxiang.beans.PropertyValue;
 import com.ywxiang.beans.PropertyValues;
 import com.ywxiang.bean.Car;
-import com.ywxiang.bean.Persion;
+import com.ywxiang.bean.Person;
 import com.ywxiang.beans.factory.config.BeanDefinition;
 import com.ywxiang.beans.factory.config.BeanReference;
 import com.ywxiang.service.HelloService;
@@ -40,7 +40,7 @@ public class DefaultListableBeanFactoryTest {
         propertyValues.addPropertyValue(propertyValue);
         beanDefinition.setPropertyValues(propertyValues);
 
-        BeanDefinition beanDefinition1 = new BeanDefinition(Persion.class);
+        BeanDefinition beanDefinition1 = new BeanDefinition(Person.class);
         PropertyValue propertyValue1 = new PropertyValue("name", "张三");
         BeanReference beanReference = new BeanReference("car");
         PropertyValue propertyValue2 = new PropertyValue("car", beanReference);
@@ -54,7 +54,7 @@ public class DefaultListableBeanFactoryTest {
         beanFactory.registerBeanDefinition("car" , beanDefinition);
         beanFactory.registerBeanDefinition("person" ,beanDefinition1);
 
-        Persion p = (Persion)beanFactory.getBean("person");
+        Person p = (Person)beanFactory.getBean("person");
         System.out.println(p);
 
     }

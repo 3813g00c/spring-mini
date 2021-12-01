@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="bean作用域，增加prototype的支持">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/FactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="prototype-bean" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="factory-bean" />
+                    <option name="lastUsedInstant" value="1638341232" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="prototype-bean" />
+                    <option name="lastUsedInstant" value="1638340525" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="aware-interface" />
+                    <option name="lastUsedInstant" value="1638338737" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="bean-factory-post-processor-and-bean-post-processor" />
+                    <option name="lastUsedInstant" value="1637731723" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="resource-and-resource-loader" />
+                    <option name="lastUsedInstant" value="1637045186" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/ywxiang/bean/Person.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/ConfigurableBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DefaultSingletonBeanRegistry.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/AdoptOpenJDK/jdk-11.0.10.9-hotspot/lib/src.zip!/java.base/java/lang/reflect/InvocationTargetException.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1yDIGs9K9bn1baLhNZwebvmVEkt" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ywxiang.beans" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ywxiang.support" />
+      <recent name="com.ywxiang" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.ApplicationContextTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanFactoryPostProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.BeanFactoryPostProcessorAndBeanPostProcessorTest" />
+      <option name="METHOD_NAME" value="testBeanFactoryPostProcessor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanPostProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.BeanFactoryPostProcessorAndBeanPostProcessorTest" />
+      <option name="METHOD_NAME" value="testBeanPostProcessor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitAndDestoryMethodTest.testInitAndDestroyMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.InitAndDestoryMethodTest" />
+      <option name="METHOD_NAME" value="testInitAndDestroyMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XmlFileDefineBeanTest.testXml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.service.XmlFileDefineBeanTest" />
+      <option name="METHOD_NAME" value="testXml" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.XmlFileDefineBeanTest.testXml" />
+        <item itemvalue="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod" />
+        <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanPostProcessor" />
+        <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanFactoryPostProcessor" />
+        <item itemvalue="JUnit.ApplicationContextTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="" />
+      <created>1631779641659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631779641659</updated>
+      <workItem from="1631779643313" duration="668000" />
+      <workItem from="1631947668200" duration="4040000" />
+      <workItem from="1636957437413" duration="70000" />
+      <workItem from="1636957520260" duration="7833000" />
+      <workItem from="1636967880593" duration="2652000" />
+      <workItem from="1637026989698" duration="1707000" />
+      <workItem from="1637029166301" duration="4548000" />
+      <workItem from="1637045373010" duration="51000" />
+      <workItem from="1637045444359" duration="55000" />
+      <workItem from="1637045559405" duration="61000" />
+      <workItem from="1637045691604" duration="84000" />
+      <workItem from="1637045958848" duration="57000" />
+      <workItem from="1637046033227" duration="19000" />
+      <workItem from="1637046259632" duration="2705000" />
+      <workItem from="1637573497765" duration="351000" />
+      <workItem from="1637647610221" duration="4200000" />
+      <workItem from="1637652564588" duration="2439000" />
+      <workItem from="1637718783536" duration="9788000" />
+    </task>
+    <task id="LOCAL-00001" summary="BeanDefinition和BeanDefinitionRegistry">
+      <created>1636967759808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636967759808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Bean实例化策略InstantiationStrategy">
+      <created>1636969980428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636969980428</updated>
+    </task>
+    <task id="LOCAL-00003" summary="为bean填充属性">
+      <created>1637040965637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637040965638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="为bean注入bean">
+      <created>1637044855414</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637044855414</updated>
+    </task>
+    <task id="LOCAL-00005" summary="路径修改">
+      <created>1637046415078</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637046415078</updated>
+    </task>
+    <task id="LOCAL-00006" summary="资源和资源加载器">
+      <created>1637573829770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637573829770</updated>
+    </task>
+    <task id="LOCAL-00007" summary="在xml文件中定义bean">
+      <created>1637724596969</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637724596969</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Aware接口">
+      <created>1638339028438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638339028438</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bean作用域，增加prototype的支持">
+      <created>1638341109567</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638341109567</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BeanDefinition和BeanDefinitionRegistry" />
+    <MESSAGE value="Bean实例化策略InstantiationStrategy" />
+    <MESSAGE value="为bean填充属性" />
+    <MESSAGE value="为bean注入bean" />
+    <MESSAGE value="路径修改" />
+    <MESSAGE value="在xml文件中定义bean" />
+    <MESSAGE value="Aware接口" />
+    <MESSAGE value="bean作用域，增加prototype的支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean作用域，增加prototype的支持" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/beans/factory/support/DefaultListableBeanFactoryTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/beans/factory/support/DefaultListableBeanFactoryTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/service/XmlFileDefineBeanTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DisposableBeanAdapter.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

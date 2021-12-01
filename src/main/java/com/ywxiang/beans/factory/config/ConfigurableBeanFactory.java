@@ -7,4 +7,10 @@ import com.ywxiang.beans.factory.HierarchicalBeanFactory;
  * @date 2021/11/23
  */
 public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, SingletonBeanRegistry {
+    void addBeanPostProcessor(BeanPostProcessor beanPostProcessor);
+
+    /**
+     * 销毁bean
+     */
+    void destroySingletons();
 }
