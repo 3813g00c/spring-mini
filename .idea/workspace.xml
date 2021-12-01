@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="bean的初始化和销毁方法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/Aware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/BeanFactoryAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/ApplicationContextAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/ApplicationContextAwareProcessor.java" afterDir="false" />
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="Aware接口">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/config/BeanDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="bean-factory-post-processor-and-bean-post-processor" />
+        <entry key="$PROJECT_DIR$" value="aware-interface" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,6 +49,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="prototype-bean" />
+                    <option name="lastUsedInstant" value="1638340525" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="aware-interface" />
                     <option name="lastUsedInstant" value="1638338737" />
                   </RecentBranch>
@@ -66,10 +67,6 @@
                   <RecentBranch>
                     <option name="branchName" value="populate-bean-with-bean" />
                     <option name="lastUsedInstant" value="1637041607" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="populate-bean-with-property-values" />
-                    <option name="lastUsedInstant" value="1637041606" />
                   </RecentBranch>
                 </list>
               </option>
@@ -299,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637724596969</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Aware接口">
+      <created>1638339028438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638339028438</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +328,8 @@
     <MESSAGE value="为bean注入bean" />
     <MESSAGE value="路径修改" />
     <MESSAGE value="在xml文件中定义bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="在xml文件中定义bean" />
+    <MESSAGE value="Aware接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aware接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
