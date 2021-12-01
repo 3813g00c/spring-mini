@@ -6,6 +6,8 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.ywxiang.beans.BeansException;
 import com.ywxiang.beans.PropertyValue;
+import com.ywxiang.beans.factory.Aware;
+import com.ywxiang.beans.factory.BeanFactoryAware;
 import com.ywxiang.beans.factory.DisposableBean;
 import com.ywxiang.beans.factory.InitializingBean;
 import com.ywxiang.beans.factory.config.AutowireCapableBeanFactory;
@@ -75,6 +77,9 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     }
 
     protected Object initializeBean(String name, Object bean, BeanDefinition beanDefinition) {
+        if (bean instanceof BeanFactoryAware) {
+            ((BeanFactoryAware) bean).setBeanFactory(this);
+        }
         Object wrappedBean = applyBeanPostProcessorsBeforeInitialization(bean, name);
         try {
             invokeInitMethods(name, wrappedBean, beanDefinition);
