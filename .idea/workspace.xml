@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="bean作用域，增加prototype的支持">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/FactoryBean.java" afterDir="false" />
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="切点表达式">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/AdvisedSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/TargetSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/AopProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/JdkDynamicAopProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/aop/DynamicProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/common/WorldServiceInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/service/WorldService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/service/WorldServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_7_16.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +30,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="prototype-bean" />
+        <entry key="$PROJECT_DIR$" value="pointcut-expression" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,24 +61,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="jdk-dynamic-proxy" />
+                    <option name="lastUsedInstant" value="1638424161" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="pointcut-expression" />
+                    <option name="lastUsedInstant" value="1638412510" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="event-and-event-listener" />
+                    <option name="lastUsedInstant" value="1638343122" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="factory-bean" />
                     <option name="lastUsedInstant" value="1638341232" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="prototype-bean" />
                     <option name="lastUsedInstant" value="1638340525" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="aware-interface" />
-                    <option name="lastUsedInstant" value="1638338737" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="bean-factory-post-processor-and-bean-post-processor" />
-                    <option name="lastUsedInstant" value="1637731723" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="resource-and-resource-loader" />
-                    <option name="lastUsedInstant" value="1637045186" />
                   </RecentBranch>
                 </list>
               </option>
@@ -92,21 +104,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/ywxiang/service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mycode\spring\spring-mini\src\test\java\com\ywxiang\service" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -117,8 +134,11 @@
       <recent name="com.ywxiang.support" />
       <recent name="com.ywxiang" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ywxiang.common" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod">
+  <component name="RunManager" selected="JUnit.DynamicProxyTest.testJdkDynamicProxy">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -130,7 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EventAndEventListenerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.EventAndEventListenerTest" />
       <module name="spring-mini" />
       <extension name="coverage">
         <pattern>
@@ -138,41 +159,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ywxiang" />
-      <option name="MAIN_CLASS_NAME" value="com.ywxiang.ApplicationContextTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanFactoryPostProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DynamicProxyTest.testJdkDynamicProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ywxiang.*" />
+          <option name="PATTERN" value="com.ywxiang.aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ywxiang" />
-      <option name="MAIN_CLASS_NAME" value="com.ywxiang.BeanFactoryPostProcessorAndBeanPostProcessorTest" />
-      <option name="METHOD_NAME" value="testBeanFactoryPostProcessor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanPostProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ywxiang.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ywxiang" />
-      <option name="MAIN_CLASS_NAME" value="com.ywxiang.BeanFactoryPostProcessorAndBeanPostProcessorTest" />
-      <option name="METHOD_NAME" value="testBeanPostProcessor" />
+      <option name="PACKAGE_NAME" value="com.ywxiang.aop" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.aop.DynamicProxyTest" />
+      <option name="METHOD_NAME" value="testJdkDynamicProxy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,6 +190,22 @@
       <option name="PACKAGE_NAME" value="com.ywxiang" />
       <option name="MAIN_CLASS_NAME" value="com.ywxiang.InitAndDestoryMethodTest" />
       <option name="METHOD_NAME" value="testInitAndDestroyMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointcutExpressionTest.testPointcutExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywxiang.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywxiang.aop" />
+      <option name="MAIN_CLASS_NAME" value="com.ywxiang.aop.PointcutExpressionTest" />
+      <option name="METHOD_NAME" value="testPointcutExpressionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DynamicProxyTest.testJdkDynamicProxy" />
+        <item itemvalue="JUnit.PointcutExpressionTest.testPointcutExpressionTest" />
+        <item itemvalue="Application.EventAndEventListenerTest" />
         <item itemvalue="JUnit.XmlFileDefineBeanTest.testXml" />
         <item itemvalue="JUnit.InitAndDestoryMethodTest.testInitAndDestroyMethod" />
-        <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanPostProcessor" />
-        <item itemvalue="JUnit.BeanFactoryPostProcessorAndBeanPostProcessorTest.testBeanFactoryPostProcessor" />
-        <item itemvalue="JUnit.ApplicationContextTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +327,35 @@
       <option name="project" value="LOCAL" />
       <updated>1638341109567</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FactoryBean">
+      <created>1638342593382</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638342593382</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FactoryBean">
+      <created>1638342905075</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638342905075</updated>
+    </task>
+    <task id="LOCAL-00012" summary="容器事件和事件监听器">
+      <created>1638410730738</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638410730738</updated>
+    </task>
+    <task id="LOCAL-00013" summary="切点表达式">
+      <created>1638424097326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638424097326</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +382,10 @@
     <MESSAGE value="在xml文件中定义bean" />
     <MESSAGE value="Aware接口" />
     <MESSAGE value="bean作用域，增加prototype的支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean作用域，增加prototype的支持" />
+    <MESSAGE value="FactoryBean" />
+    <MESSAGE value="容器事件和事件监听器" />
+    <MESSAGE value="切点表达式" />
+    <option name="LAST_COMMIT_MESSAGE" value="切点表达式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,6 +409,41 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/beans/factory/support/DisposableBeanAdapter.java</url>
           <line>34</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/context/support/AbstractApplicationContext.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/context/event/SimpleApplicationEventMulticaster.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/aop/aspectj/AspectJExpressionPointcut.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ywxiang/aop/DynamicProxyTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/JdkDynamicAopProxy.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
