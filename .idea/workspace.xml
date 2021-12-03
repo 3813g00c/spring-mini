@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="切点表达式">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/AdvisedSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/TargetSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/AopProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/JdkDynamicAopProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/aop/DynamicProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/common/WorldServiceInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/service/WorldService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ywxiang/service/WorldServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_7_16.xml" afterDir="false" />
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="基于JDK的动态代理">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/CglibAopProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pointcut-expression" />
+        <entry key="$PROJECT_DIR$" value="jdk-dynamic-proxy" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +48,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="cglib-dynamic-proxy" />
+                    <option name="lastUsedInstant" value="1638513552" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="jdk-dynamic-proxy" />
                     <option name="lastUsedInstant" value="1638424161" />
                   </RecentBranch>
@@ -75,10 +66,6 @@
                   <RecentBranch>
                     <option name="branchName" value="factory-bean" />
                     <option name="lastUsedInstant" value="1638341232" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="prototype-bean" />
-                    <option name="lastUsedInstant" value="1638340525" />
                   </RecentBranch>
                 </list>
               </option>
@@ -263,6 +250,7 @@
       <workItem from="1637647610221" duration="4200000" />
       <workItem from="1637652564588" duration="2439000" />
       <workItem from="1637718783536" duration="9788000" />
+      <workItem from="1638513469965" duration="1312000" />
     </task>
     <task id="LOCAL-00001" summary="BeanDefinition和BeanDefinitionRegistry">
       <created>1636967759808</created>
@@ -355,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638424097326</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="基于JDK的动态代理">
+      <created>1638432332176</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638432332176</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +380,8 @@
     <MESSAGE value="FactoryBean" />
     <MESSAGE value="容器事件和事件监听器" />
     <MESSAGE value="切点表达式" />
-    <option name="LAST_COMMIT_MESSAGE" value="切点表达式" />
+    <MESSAGE value="基于JDK的动态代理" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于JDK的动态代理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
