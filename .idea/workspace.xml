@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="基于JDK的动态代理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/CglibAopProxy.java" afterDir="false" />
+    <list default="true" id="dc544ede-7f63-4585-9f6c-822686abb04c" name="Default Changelist" comment="cglib-dynamic-proxy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/framework/ProxyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/AdvisedSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ywxiang/aop/AdvisedSupport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jdk-dynamic-proxy" />
+        <entry key="$PROJECT_DIR$" value="cglib-dynamic-proxy" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +49,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="proxy-factory" />
+                    <option name="lastUsedInstant" value="1638516009" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="cglib-dynamic-proxy" />
                     <option name="lastUsedInstant" value="1638513552" />
                   </RecentBranch>
@@ -62,10 +67,6 @@
                   <RecentBranch>
                     <option name="branchName" value="event-and-event-listener" />
                     <option name="lastUsedInstant" value="1638343122" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="factory-bean" />
-                    <option name="lastUsedInstant" value="1638341232" />
                   </RecentBranch>
                 </list>
               </option>
@@ -250,7 +251,7 @@
       <workItem from="1637647610221" duration="4200000" />
       <workItem from="1637652564588" duration="2439000" />
       <workItem from="1637718783536" duration="9788000" />
-      <workItem from="1638513469965" duration="1312000" />
+      <workItem from="1638513469965" duration="2853000" />
     </task>
     <task id="LOCAL-00001" summary="BeanDefinition和BeanDefinitionRegistry">
       <created>1636967759808</created>
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638432332176</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cglib-dynamic-proxy">
+      <created>1638515989065</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638515989065</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +389,8 @@
     <MESSAGE value="容器事件和事件监听器" />
     <MESSAGE value="切点表达式" />
     <MESSAGE value="基于JDK的动态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于JDK的动态代理" />
+    <MESSAGE value="cglib-dynamic-proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="cglib-dynamic-proxy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
